@@ -1561,3 +1561,7 @@ input[type="date"] {
 .doc table { width: 100%; border-collapse: collapse; font-size: .875rem; margin: 12px 0; }
 .doc table th, .doc table td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
 .doc table thead th { background: var(--surface-2); font-size: .8125rem; white-space: nowrap; }
+
+/* .wrap + .section 조합에서 좌우 여백이 사라지지 않도록 */
+.wrap.section { padding: 28px 16px; }
+.wrap.section-tight { padding: 12px 16px 28px; }
