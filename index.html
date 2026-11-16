@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta name="google-adsense-account" content="ca-pub-3249841704400584" />
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>퇴직금·실업급여·연말정산·출산육아 지원금 계산기 4종 (2026 기준) | 한국 혜택 계산소</title>
+<meta name="description" content="2026년 기준 퇴직금(육아휴직 기간 반영), 실업급여(상한 68,100원·하한 66,048원), 연말정산 환급·추징, 출산·육아 정부지원금(첫만남이용권·부모급여·아동수당·아이맞이지원금)을 한 화면에서 계산합니다. 법령 근거와 계산 과정을 함께 보여 드립니다." />
+<meta name="keywords" content="퇴직금 계산기, 육아휴직 후 퇴직금, 평균임금 계산, 실업급여 계산기, 구직급여, 연말정산 계산기, 환급금 계산, 출산지원금 계산기, 부모급여, 아동수당, 첫만남이용권, 아이맞이지원금, 2026" />
+<meta name="author" content="한국 혜택 계산소" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://sdn6517-cmd.github.io/korea-benefit-calc/" />
+<meta name="theme-color" content="#1d3f8f" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="한국 혜택 계산소" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:title" content="퇴직금·실업급여·연말정산·출산육아 지원금 계산기 4종 (2026 기준)" />
+<meta property="og:description" content="육아휴직 뒤 퇴직금 정산부터 실업급여, 연말정산 환급액, 출산·육아 지원금까지 — 2026년 법령·고시를 반영해 계산 과정과 출처를 함께 보여 줍니다." />
+<meta property="og:url" content="https://sdn6517-cmd.github.io/korea-benefit-calc/" />
+<meta property="og:image" content="https://sdn6517-cmd.github.io/korea-benefit-calc/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="퇴직금·실업급여·연말정산·출산육아 계산기 4종" />
+<meta name="twitter:description" content="2026년 기준 법령·고시 반영. 회원가입 없이 브라우저에서 바로 계산합니다." />
+<meta name="twitter:image" content="https://sdn6517-cmd.github.io/korea-benefit-calc/og-image.png" />
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="stylesheet" crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%231d3f8f'/%3E%3Cpath%20d='M8%2022l5-6%204%203%207-9'%20fill='none'%20stroke='%23fff'%20stroke-width='2.4'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://sdn6517-cmd.github.io/korea-benefit-calc/#app",
+      "name": "한국 혜택 계산소 — 퇴직금·실업급여·연말정산·출산육아 지원금 계산기",
+      "url": "https://sdn6517-cmd.github.io/korea-benefit-calc/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any (웹 브라우저)",
+      "inLanguage": "ko-KR",
+      "isAccessibleForFree": true,
+      "description": "2026년 기준 법령·고시를 반영해 퇴직금(육아휴직 기간 반영), 실업급여, 연말정산 환급액, 출산·육아 정부지원금을 계산하는 무료 웹 계산기입니다.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+      "featureList": [
+        "퇴직금 — 평균임금 3개월·상여금 3/12·통상임금 비교, 육아휴직 기간 제외 반영",
+        "실업급여 — 2026년 상한 68,100원·하한 66,048원, 소정급여일수 120~270일",
+        "연말정산 — 근로소득공제·인적공제·자녀세액공제·월세·연금계좌 세액공제",
+        "출산·육아 — 첫만남이용권·부모급여·아동수당과 2027년 아이맞이지원금 비교"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sdn6517-cmd.github.io/korea-benefit-calc/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "육아휴직을 쓰고 퇴직하면 퇴직금이 줄어드나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "계속근로기간에는 육아휴직 기간이 그대로 들어가므로 재직일수는 줄지 않습니다. 다만 평균임금을 계산할 때는 육아휴직 기간과 그 기간에 지급된 임금이 제외되기 때문에(근로기준법 시행령 제2조 제1항), 산정기간을 그 일수만큼 과거로 늘려 1일 평균임금을 구합니다. 휴직 기간이 3개월을 넘어 퇴직 전 3개월이 통째로 제외되면 휴직 시작일을 기준으로 그 이전 3개월 임금으로 계산합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2026년 실업급여 상한액과 하한액은 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026년 1월 1일 이후 이직자는 1일 상한 68,100원(기초일액 상한 113,500원의 60%), 하한 66,048원(2026년 최저임금 10,320원 × 8시간 × 80%)입니다. 상·하한 차이가 2,052원뿐이라 평균임금의 60%가 그대로 적용되는 구간은 기초일액 110,080~113,500원으로 매우 좁습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "연말정산 환급액은 어떻게 계산하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "총급여에서 근로소득공제·인적공제·4대보험료·신용카드 소득공제를 빼 과세표준을 만들고, 기본세율(6~45%)을 곱해 산출세액을 구한 뒤 근로소득세액공제·자녀세액공제·연금계좌·월세 세액공제를 빼 결정세액을 냅니다. 1년 동안 원천징수된 세금(기납부세액)보다 결정세액이 적으면 그 차액을 돌려받습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2027년 4월 출생아는 아이맞이지원금을 받을 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2027년 예산안 기준으로는 2027년 7월 1일 이후 출생아부터 적용되므로, 2027년 4월 출생아는 현행 첫만남이용권·부모급여·아동수당을 받습니다. 다만 2027년 1월 출생아부터 소급 적용하는 방안이 국회에서 논의되고 있어, 2026년 11월 17일 현재로는 확정되지 않았습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "계산 결과가 실제 지급액과 다른 이유는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "법령과 고시에 정해진 금액만 반영하고, 회사 규정·지자체 조례·개인별 공제 항목처럼 사람마다 달라지는 값은 넣지 않았기 때문입니다. 근로기준법·고용보험법·소득세법 조문과 고용노동부·국세청 고시를 기준으로 했으며, 지급 여부와 금액은 담당 기관의 심사로 확정됩니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Google AdSense (사이트 소유권 확인 + 자동 광고) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3249841704400584" crossorigin="anonymous"></script>
+</head>
+<body>
+<a class="skip-link" href="#calculators">계산기로 바로 가기</a>
+
+<header class="site-header">
+  <div class="wrap inner">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">혜</span><span>한국 혜택 계산소</span></a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="#calculators" data-tab="severance">퇴직금</a>
+      <a href="#calculators" data-tab="unemployment">실업급여</a>
+      <a href="#calculators" data-tab="yearend">연말정산</a>
+      <a href="#calculators" data-tab="childbirth">출산·육아</a>
+      <a href="about.html">계산 기준</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero wrap">
+    <p class="eyebrow">2026년 11월 17일 기준 · 4종 통합</p>
+    <h1>퇴직하고 아이 키우는 해에,<br />받을 수 있는 돈을 한 번에 계산합니다</h1>
+    <p class="lede">
+      육아휴직을 쓰고 퇴직하면 퇴직금은 어떻게 달라지는지, 회사를 그만두면 실업급여가 얼마인지,
+      연말정산에서 돌려받을 세금이 얼마인지, 아이가 태어나면 정부가 얼마를 주는지.
+      서로 다른 법률에서 따로 계산해야 했던 네 가지를 한 화면에 모았습니다.
+      값을 바꾸면 결과가 즉시 다시 계산되고, 왜 그 숫자가 나왔는지 계산 과정과 근거 조문도 함께 보여 드립니다.
+    </p>
+    <ul class="chips static">
+      <li>📅 기준일 2026. 11. 17.</li>
+      <li>🔒 입력값은 서버로 전송되지 않습니다</li>
+      <li>🙋 회원가입·로그인 없음</li>
+      <li>📱 모바일 우선 반응형</li>
+      <li>✅ 계산 엔진 자동 검증</li>
+    </ul>
+
+    <div class="tabs" role="tablist" aria-label="계산기 선택">
+      <button class="tab" role="tab" id="tab-severance" data-tab="severance" aria-controls="panel-severance" aria-selected="true">
+        <span class="tab-num">1</span>퇴직금
+      </button>
+      <button class="tab" role="tab" id="tab-unemployment" data-tab="unemployment" aria-controls="panel-unemployment" aria-selected="false" tabindex="-1">
+        <span class="tab-num">2</span>실업급여
+      </button>
+      <button class="tab" role="tab" id="tab-yearend" data-tab="yearend" aria-controls="panel-yearend" aria-selected="false" tabindex="-1">
+        <span class="tab-num">3</span>연말정산
+      </button>
+      <button class="tab" role="tab" id="tab-childbirth" data-tab="childbirth" aria-controls="panel-childbirth" aria-selected="false" tabindex="-1">
+        <span class="tab-num">4</span>출산·육아
+      </button>
+    </div>
+  </section>
+
+  <div class="wrap" id="calculators">
+
+    <!-- 광고: 상단 (ad-slot-top) -->
+    <aside class="ad-slot" id="ad-slot-top" aria-label="광고">
+      <div class="ad-inner">
+        <div>
+          <b>광고 영역 · ad-slot-top</b>
+          <span>Google AdSense 반응형 광고가 들어가는 자리입니다.</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ==================== 1. 퇴직금 ==================== -->
+    <section class="panel section section-tight" id="panel-severance" data-panel="severance" role="tabpanel" aria-labelledby="tab-severance">
+      <div class="panel-intro">
+        <h2>퇴직금 — 육아휴직을 쓰고 그만둔 경우까지</h2>
+        <p>퇴직금은 <strong>1일 평균임금 × 30일 × 재직일수 ÷ 365</strong>로 계산합니다. 육아휴직 기간은 재직일수에 들어가지만 평균임금 산정에서는 빠지기 때문에, 휴직 뒤 퇴직하면 두 가지가 서로 다른 방향으로 작용합니다. 이 계산기는 그 둘을 나눠서 반영합니다.</p>
+      </div>
+
+      <div class="calc-grid">
+        <form class="card" id="sv-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">1</span>
+            <h2>근무·임금 정보</h2>
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="sv-hire">입사일</label>
+              <input type="date" id="sv-hire" value="2019-03-02" />
+            </div>
+            <div>
+              <label class="field-label" for="sv-last">퇴직일(마지막 근무일)</label>
+              <input type="date" id="sv-last" value="2026-11-30" />
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <span class="field-label">휴직 기간 (선택) — 계속근로기간에는 포함, 평균임금에서는 제외</span>
+          <div class="period-row">
+            <div class="segmented compact" role="group" aria-label="1번째 휴직 종류">
+              <label><input type="radio" name="sv-p1-type" value="none" checked /><span>없음</span></label>
+              <label><input type="radio" name="sv-p1-type" value="parental" /><span>육아휴직</span></label>
+              <label><input type="radio" name="sv-p1-type" value="maternity" /><span>출산전후휴가</span></label>
+            </div>
+            <div class="grid-2 narrow">
+              <input type="date" id="sv-p1-start" aria-label="1번째 휴직 시작일" />
+              <input type="date" id="sv-p1-end" aria-label="1번째 휴직 종료일" />
+            </div>
+          </div>
+
+          <div class="period-row">
+            <div class="segmented compact" role="group" aria-label="2번째 휴직 종류">
+              <label><input type="radio" name="sv-p2-type" value="none" checked /><span>없음</span></label>
+              <label><input type="radio" name="sv-p2-type" value="parental" /><span>육아휴직</span></label>
+              <label><input type="radio" name="sv-p2-type" value="maternity" /><span>출산전후휴가</span></label>
+            </div>
+            <div class="grid-2 narrow">
+              <input type="date" id="sv-p2-start" aria-label="2번째 휴직 시작일" />
+              <input type="date" id="sv-p2-end" aria-label="2번째 휴직 종료일" />
+            </div>
+          </div>
+          <span class="hint">복직 뒤 다시 일한 기간이 3개월이 안 되면, 계산기가 산정기간을 휴직 전까지 늘려 잡습니다.</span>
+
+          <hr class="divider" />
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="sv-base">퇴직 전 월 기본급</label>
+              <div class="field-row">
+                <input type="number" id="sv-base" min="0" step="10000" value="3200000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="sv-fixed">월 고정수당</label>
+              <div class="field-row">
+                <input type="number" id="sv-fixed" min="0" step="10000" value="400000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+          </div>
+          <div class="grid-2" style="margin-top:10px">
+            <div>
+              <label class="field-label" for="sv-variable">3개월 변동수당 합계</label>
+              <div class="field-row">
+                <input type="number" id="sv-variable" min="0" step="10000" value="0" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="sv-bonus">연간 상여금 총액</label>
+              <div class="field-row">
+                <input type="number" id="sv-bonus" min="0" step="100000" value="4000000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+          </div>
+          <div class="grid-2" style="margin-top:10px">
+            <div>
+              <label class="field-label" for="sv-leave-pay">퇴직 전 지급된 연차수당</label>
+              <div class="field-row">
+                <input type="number" id="sv-leave-pay" min="0" step="10000" value="0" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="sv-ordinary">월 통상임금</label>
+              <div class="field-row">
+                <input type="number" id="sv-ordinary" min="0" step="10000" value="3600000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top:10px">
+            <div>
+              <label class="field-label" for="sv-hours">1주 소정근로시간</label>
+              <div class="field-row">
+                <input type="number" id="sv-hours" min="1" max="68" step="1" value="40" inputmode="numeric" />
+                <span class="unit">시간</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="sv-unused">미사용 연차일수</label>
+              <div class="field-row">
+                <input type="number" id="sv-unused" min="0" max="60" step="0.5" value="0" inputmode="decimal" />
+                <span class="unit">일</span>
+              </div>
+            </div>
+          </div>
+          <span class="hint">통상임금을 모르면 기본급+고정수당으로 두세요. 평균임금이 통상임금보다 적을 때만 통상임금이 쓰입니다.</span>
+        </form>
+
+        <div class="card result-card">
+          <div class="result-hero" aria-live="polite">
+            <div class="label">법정 퇴직금</div>
+            <div class="value" id="sv-total">0원</div>
+            <div class="sub" id="sv-total-ko"></div>
+            <div class="hero-foot"><span class="badge badge-ok" id="sv-badge">2026년 기준</span></div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi">
+              <div class="k-label">계속근로기간</div>
+              <div class="k-value" id="sv-days">—</div>
+              <div class="k-sub" id="sv-years">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">평균임금 산정기간</div>
+              <div class="k-value small" id="sv-window">—</div>
+              <div class="k-sub"><span id="sv-window-days">—</span> 중 제외 <span id="sv-excluded">—</span></div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">1일 평균임금</div>
+              <div class="k-value" id="sv-day-avg">—</div>
+              <div class="k-sub">산정일수 <span id="sv-included">—</span></div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">적용 1일 임금</div>
+              <div class="k-value" id="sv-applied">—</div>
+              <div class="k-sub"><span id="sv-basis">—</span> 기준</div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <h3 class="result-title">계산 과정</h3>
+          <div class="table-wrap">
+            <table class="mini-table">
+              <thead><tr><th>항목</th><th class="num">금액·일수</th></tr></thead>
+              <tbody id="sv-rows"></tbody>
+            </table>
+          </div>
+
+          <div class="kpi-grid" style="margin-top:14px">
+            <div class="kpi">
+              <div class="k-label">휴직기간 합계</div>
+              <div class="k-value" id="sv-leave-days">—</div>
+              <div class="k-sub">산정기간 내 <span id="sv-leave-window">—</span></div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">미사용 연차수당</div>
+              <div class="k-value" id="sv-allowance">—</div>
+              <div class="k-sub">1일 통상임금 × 미사용일수</div>
+            </div>
+          </div>
+
+          <div class="kpi highlight" style="margin-top:12px">
+            <div class="k-label">퇴직금 + 연차수당</div>
+            <div class="k-value" id="sv-grand">—</div>
+            <div class="k-sub">세전 · 퇴직소득세 별도</div>
+          </div>
+
+          <div class="note" id="sv-note"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. 실업급여 ==================== -->
+    <section class="panel section section-tight" id="panel-unemployment" data-panel="unemployment" role="tabpanel" aria-labelledby="tab-unemployment" hidden>
+      <div class="panel-intro">
+        <h2>실업급여(구직급여) — 2026년 상한·하한 반영</h2>
+        <p>구직급여일액은 <strong>이직 전 3개월 평균임금의 60%</strong>이고, 1일 상한은 68,100원, 하한은 66,048원입니다(2026년 1월 1일 이후 이직자). 받는 기간은 이직 당시 만 나이와 고용보험 가입기간으로 정해집니다.</p>
+      </div>
+
+      <div class="calc-grid">
+        <form class="card" id="ui-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">1</span>
+            <h2>이직·가입 정보</h2>
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="ui-last">이직일</label>
+              <input type="date" id="ui-last" value="2026-11-17" />
+            </div>
+            <div>
+              <label class="field-label" for="ui-birth">생년월일</label>
+              <input type="date" id="ui-birth" value="1990-05-20" />
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top:10px">
+            <div>
+              <label class="field-label" for="ui-ins-years">고용보험 가입기간(년)</label>
+              <div class="field-row">
+                <input type="number" id="ui-ins-years" min="0" max="50" step="1" value="5" inputmode="numeric" />
+                <span class="unit">년</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="ui-ins-months">+ 개월</label>
+              <div class="field-row">
+                <input type="number" id="ui-ins-months" min="0" max="11" step="1" value="3" inputmode="numeric" />
+                <span class="unit">개월</span>
+              </div>
+            </div>
+          </div>
+          <span class="hint">이직 전 18개월 중 피보험단위기간이 180일 이상이어야 수급자격이 생깁니다. 3년 이내 공백은 합산됩니다.</span>
+
+          <div class="field" style="margin-top:12px">
+            <label class="switch">
+              <input type="checkbox" id="ui-disabled" />
+              <span>장애인 (연령과 관계없이 가산된 소정급여일수)</span>
+            </label>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="ui-monthly">이직 전 월 평균 급여</label>
+              <div class="field-row">
+                <input type="number" id="ui-monthly" min="0" step="100000" value="3000000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="ui-wage3m">3개월 임금총액 (직접 입력)</label>
+              <div class="field-row">
+                <input type="number" id="ui-wage3m" min="0" step="100000" value="0" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+          </div>
+          <span class="hint">직접 입력이 0이면 ‘월 평균 급여 × 3’으로 계산합니다. 상여·수당이 몰린 달이 있다면 3개월 합계를 직접 넣는 편이 정확합니다.</span>
+
+          <div class="grid-2" style="margin-top:10px">
+            <div>
+              <label class="field-label" for="ui-hours">1일 소정근로시간</label>
+              <div class="field-row">
+                <input type="number" id="ui-hours" min="1" max="8" step="1" value="8" inputmode="numeric" />
+                <span class="unit">시간</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label">2027년 이직 기준</label>
+              <label class="switch" style="margin-top:8px">
+                <input type="checkbox" id="ui-plan" />
+                <span>상한액 연동 개정안 반영(입법예고)</span>
+              </label>
+            </div>
+          </div>
+        </form>
+
+        <div class="card result-card">
+          <div class="result-hero" aria-live="polite">
+            <div class="label">1일 구직급여일액</div>
+            <div class="value" id="ui-daily">0원</div>
+            <div class="sub" id="ui-daily-ko"></div>
+            <div class="hero-foot"><span class="badge badge-ok" id="ui-badge">2026년 이직</span></div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi">
+              <div class="k-label">소정급여일수</div>
+              <div class="k-value" id="ui-days">—</div>
+              <div class="k-sub">만 <span id="ui-age">—</span> · 가입 <span id="ui-ins">—</span></div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">총 수령액(세전)</div>
+              <div class="k-value" id="ui-total">—</div>
+              <div class="k-sub" id="ui-total-ko">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">월 수령액(30일 환산)</div>
+              <div class="k-value" id="ui-monthly">—</div>
+              <div class="k-sub">주 6일 개편 시 <span id="ui-monthly6">—</span></div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">2026년 최저임금</div>
+              <div class="k-value" id="ui-minwage">—</div>
+              <div class="k-sub">하한액의 기준</div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <h3 class="result-title">계산 과정</h3>
+          <div class="table-wrap">
+            <table class="mini-table">
+              <thead><tr><th>항목</th><th class="num">금액</th></tr></thead>
+              <tbody id="ui-rows"></tbody>
+            </table>
+          </div>
+
+          <div class="kpi-grid" style="margin-top:14px">
+            <div class="kpi">
+              <div class="k-label">이직 전 3개월 일수</div>
+              <div class="k-value" id="ui-3m-days">—</div>
+              <div class="k-sub">달력 일수 기준</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">적용 기초일액</div>
+              <div class="k-value" id="ui-base">—</div>
+              <div class="k-sub">평균임금 <span id="ui-base-raw">—</span></div>
+            </div>
+          </div>
+
+          <div class="note" id="ui-note"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. 연말정산 ==================== -->
+    <section class="panel section section-tight" id="panel-yearend" data-panel="yearend" role="tabpanel" aria-labelledby="tab-yearend" hidden>
+      <div class="panel-intro">
+        <h2>연말정산 — 2027년 2월에 돌려받을 돈</h2>
+        <p>2026년에 번 소득으로 2027년 2월 급여에 정산되는 <strong>2026년 귀속 연말정산</strong> 기준입니다. 근로소득공제·인적공제·자녀세액공제·월세·연금계좌 세액공제에 신용카드 소득공제와 4대보험료를 더해, 원천징수된 세금과의 차액을 계산합니다.</p>
+      </div>
+
+      <div class="calc-grid">
+        <form class="card" id="ye-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">1</span>
+            <h2>소득·가족·지출</h2>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="ye-gross">연간 총급여 (비과세 제외)</label>
+            <div class="field-row">
+              <input type="number" id="ye-gross" min="0" step="100000" value="50000000" inputmode="numeric" />
+              <span class="unit">원</span>
+            </div>
+            <div class="chips" role="group" aria-label="총급여 빠른 선택">
+              <button type="button" class="chip" data-set='{"ye-gross":30000000}'>3,000만</button>
+              <button type="button" class="chip" data-set='{"ye-gross":40000000}'>4,000만</button>
+              <button type="button" class="chip" data-set='{"ye-gross":50000000}'>5,000만</button>
+              <button type="button" class="chip" data-set='{"ye-gross":60000000}'>6,000만</button>
+              <button type="button" class="chip" data-set='{"ye-gross":80000000}'>8,000만</button>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="ye-dependents">부양가족 수 (본인·자녀 제외)</label>
+              <div class="field-row">
+                <input type="number" id="ye-dependents" min="0" max="10" step="1" value="1" inputmode="numeric" />
+                <span class="unit">명</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="ye-children">자녀 수 (20세 이하)</label>
+              <div class="field-row">
+                <input type="number" id="ye-children" min="0" max="9" step="1" value="1" inputmode="numeric" />
+                <span class="unit">명</span>
+              </div>
+            </div>
+          </div>
+          <span class="hint">배우자를 부양가족에 넣으면 1명으로 셉니다. 자녀는 부양가족 수와 별도로 입력하세요(이중 계산 방지).</span>
+
+          <div class="grid-2" style="margin-top:10px">
+            <div>
+              <label class="field-label" for="ye-childtax">자녀세액공제 대상 (만 9세 이상)</label>
+              <div class="field-row">
+                <input type="number" id="ye-childtax" min="0" max="9" step="1" value="1" inputmode="numeric" />
+                <span class="unit">명</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label">2026년 출생·입양 자녀</label>
+              <div class="segmented compact" role="group" aria-label="2026년 출생·입양 자녀 순위">
+                <label><input type="radio" name="ye-birth" value="0" checked /><span>없음</span></label>
+                <label><input type="radio" name="ye-birth" value="1" /><span>첫째</span></label>
+                <label><input type="radio" name="ye-birth" value="2" /><span>둘째</span></label>
+                <label><input type="radio" name="ye-birth" value="3" /><span>셋째+</span></label>
+              </div>
+            </div>
+          </div>
+          <span class="hint">2026년 귀속부터 자녀세액공제 대상 나이가 만 9세 이상으로 올라갔습니다(2017년생 제외, 2030년까지 단계 상향).</span>
+
+          <hr class="divider" />
+
+          <div class="field">
+            <label class="field-label" for="ye-insurance">4대보험료 근로자 부담 (연간)</label>
+            <div class="field-row">
+              <input type="number" id="ye-insurance" min="0" step="10000" value="" inputmode="numeric" placeholder="비우면 자동 추정" />
+              <span class="unit">원</span>
+            </div>
+            <span class="hint">비워 두면 2026년 요율(국민연금 4.75%·건강보험 3.595%·장기요양 0.4724%·고용보험 0.9%)로 자동 계산합니다. 급여명세서의 공제 합계를 넣으면 더 정확합니다.</span>
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="ye-rent">연간 월세 (총액)</label>
+              <div class="field-row">
+                <input type="number" id="ye-rent" min="0" step="100000" value="0" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="ye-pension">연금계좌 납입액 (연금저축+IRP)</label>
+              <div class="field-row">
+                <input type="number" id="ye-pension" min="0" step="100000" value="0" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+          </div>
+          <div class="field" style="margin-top:10px">
+            <label class="switch">
+              <input type="checkbox" id="ye-homeless" checked />
+              <span>무주택 세대주 (월세 세액공제 요건)</span>
+            </label>
+          </div>
+
+          <hr class="divider" />
+
+          <span class="field-label">신용카드 등 사용액 (2026년 1~12월)</span>
+          <div class="grid-2 narrow" style="margin-top:6px">
+            <div>
+              <label class="field-label small" for="ye-card-credit">신용카드</label>
+              <div class="field-row"><input type="number" id="ye-card-credit" min="0" step="100000" value="0" inputmode="numeric" /><span class="unit">원</span></div>
+            </div>
+            <div>
+              <label class="field-label small" for="ye-card-check">체크·현금영수증</label>
+              <div class="field-row"><input type="number" id="ye-card-check" min="0" step="100000" value="0" inputmode="numeric" /><span class="unit">원</span></div>
+            </div>
+          </div>
+          <div class="grid-2 narrow" style="margin-top:8px">
+            <div>
+              <label class="field-label small" for="ye-card-market">전통시장</label>
+              <div class="field-row"><input type="number" id="ye-card-market" min="0" step="100000" value="0" inputmode="numeric" /><span class="unit">원</span></div>
+            </div>
+            <div>
+              <label class="field-label small" for="ye-card-transit">대중교통</label>
+              <div class="field-row"><input type="number" id="ye-card-transit" min="0" step="100000" value="0" inputmode="numeric" /><span class="unit">원</span></div>
+            </div>
+          </div>
+          <div class="grid-2 narrow" style="margin-top:8px">
+            <div>
+              <label class="field-label small" for="ye-card-culture">도서·공연·영화</label>
+              <div class="field-row"><input type="number" id="ye-card-culture" min="0" step="100000" value="0" inputmode="numeric" /><span class="unit">원</span></div>
+            </div>
+            <div>
+              <label class="field-label small" for="ye-withheld">기납부세액(소득세)</label>
+              <div class="field-row"><input type="number" id="ye-withheld" min="0" step="10000" value="" inputmode="numeric" placeholder="비우면 추정" /><span class="unit">원</span></div>
+            </div>
+          </div>
+          <div class="field" style="margin-top:10px">
+            <label class="switch">
+              <input type="checkbox" id="ye-filed" checked />
+              <span>회사에 부양가족·자녀 공제신고서를 냈다 (원천징수에 반영)</span>
+            </label>
+          </div>
+        </form>
+
+        <div class="card result-card">
+          <div class="result-hero" aria-live="polite">
+            <div class="label">연말정산 예상 환급액</div>
+            <div class="value" id="ye-refund">0원</div>
+            <div class="sub" id="ye-refund-ko"></div>
+            <div class="hero-foot">
+              <span class="badge badge-ok" id="ye-badge">2026년 귀속</span>
+              <span class="badge badge-neutral" id="ye-withheld-badge">간이세액표 추정</span>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi">
+              <div class="k-label">결정세액(소득세)</div>
+              <div class="k-value" id="ye-decided">—</div>
+              <div class="k-sub">산출세액 <span id="ye-calculated">—</span></div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">지방소득세</div>
+              <div class="k-value" id="ye-local">—</div>
+              <div class="k-sub">결정세액의 10%</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">총 보유세 부담</div>
+              <div class="k-value" id="ye-total-tax">—</div>
+              <div class="k-sub">소득세 + 지방소득세</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">한계세율</div>
+              <div class="k-value" id="ye-marginal">—</div>
+              <div class="k-sub">소득공제 100만원당 절세</div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <h3 class="result-title">계산 과정</h3>
+          <div class="table-wrap">
+            <table class="mini-table">
+              <thead><tr><th>항목</th><th class="num">금액</th></tr></thead>
+              <tbody id="ye-rows"></tbody>
+            </table>
+          </div>
+
+          <div class="kpi-grid" style="margin-top:14px">
+            <div class="kpi">
+              <div class="k-label">과세표준</div>
+              <div class="k-value" id="ye-taxbase">—</div>
+              <div class="k-sub">근로소득금액 − 소득공제</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">세액공제 합계</div>
+              <div class="k-value" id="ye-credits">—</div>
+              <div class="k-sub">근로·자녀·연금·월세</div>
+            </div>
+          </div>
+
+          <div class="note" id="ye-note"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. 출산·육아 ==================== -->
+    <section class="panel section section-tight" id="panel-childbirth" data-panel="childbirth" role="tabpanel" aria-labelledby="tab-childbirth" hidden>
+      <div class="panel-intro">
+        <h2>출산·육아 지원금 — 2026년 제도와 2027년 개편 비교</h2>
+        <p>2027년 7월 1일 이후 출생아부터는 첫만남이용권·부모급여·아동수당이 <strong>아이맞이지원금</strong>과 <strong>아동기본수당</strong>으로 바뀝니다. 출생 시점에 따라 어느 제도가 적용되는지, 아이가 12세가 될 때까지 총 얼마를 받는지 함께 계산합니다.</p>
+      </div>
+
+      <div class="calc-grid">
+        <form class="card" id="cb-form" onsubmit="return false;">
+          <div class="card-head">
+            <span class="step">1</span>
+            <h2>아이·가구 정보</h2>
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="cb-year">출생 연도</label>
+              <div class="field-row">
+                <input type="number" id="cb-year" min="2026" max="2028" step="1" value="2026" inputmode="numeric" />
+                <span class="unit">년</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="cb-month">출생 월</label>
+              <div class="field-row">
+                <input type="number" id="cb-month" min="1" max="12" step="1" value="1" inputmode="numeric" />
+                <span class="unit">월</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="field" style="margin-top:12px">
+            <span class="field-label">출생 순위</span>
+            <div class="segmented" role="group" aria-label="출생 순위">
+              <label><input type="radio" name="cb-order" value="1" checked /><span>첫째</span></label>
+              <label><input type="radio" name="cb-order" value="2" /><span>둘째</span></label>
+              <label><input type="radio" name="cb-order" value="3" /><span>셋째 이상</span></label>
+            </div>
+            <span class="hint">첫만남이용권 첫째 200만원·둘째 이상 300만원 / 아이맞이지원금 첫째 1,000만·둘째 1,200만·셋째 이상 1,500만원</span>
+          </div>
+
+          <div class="field">
+            <span class="field-label">거주 지역</span>
+            <div class="segmented grid-wrap" role="group" aria-label="거주 지역">
+              <label><input type="radio" name="cb-region" value="metro" checked /><span>수도권</span></label>
+              <label><input type="radio" name="cb-region" value="nonmetro" /><span>비수도권</span></label>
+              <label><input type="radio" name="cb-region" value="depop" /><span>인구감소·우대지역</span></label>
+            </div>
+            <label class="switch" style="margin-top:10px">
+              <input type="checkbox" id="cb-voucher" />
+              <span>지역사랑상품권으로 수령 (+1만원, 인구감소지역만)</span>
+            </label>
+          </div>
+
+          <div class="field">
+            <span class="field-label">양육 방식</span>
+            <div class="segmented" role="group" aria-label="양육 방식">
+              <label><input type="radio" name="cb-care" value="home" checked /><span>가정양육</span></label>
+              <label><input type="radio" name="cb-care" value="daycare" /><span>어린이집</span></label>
+            </div>
+            <span class="hint">어린이집을 쓰면 보육료가 먼저 빠져 0세는 월 41만 6,000원, 1세는 현금 차액이 없습니다. 개편안에서는 0~1세 가정양육에 월 30만원이 더 붙습니다.</span>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="field">
+            <span class="field-label">육아휴직 제도</span>
+            <div class="segmented" role="group" aria-label="육아휴직 제도">
+              <label><input type="radio" name="cb-leave-type" value="together" checked /><span>6+6 함께</span></label>
+              <label><input type="radio" name="cb-leave-type" value="general" /><span>일반</span></label>
+              <label><input type="radio" name="cb-leave-type" value="none" /><span>쓰지 않음</span></label>
+            </div>
+            <span class="hint">부모가 함께 쓰면 첫 6개월 상한이 250만~450만원으로 올라갑니다(자녀 생후 18개월 이내).</span>
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <label class="field-label" for="cb-wage-a">본인 월 통상임금</label>
+              <div class="field-row">
+                <input type="number" id="cb-wage-a" min="0" step="100000" value="3000000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="cb-wage-b">배우자 월 통상임금</label>
+              <div class="field-row">
+                <input type="number" id="cb-wage-b" min="0" step="100000" value="3000000" inputmode="numeric" />
+                <span class="unit">원</span>
+              </div>
+            </div>
+          </div>
+          <div class="chips" role="group" aria-label="통상임금 빠른 선택">
+            <button type="button" class="chip" data-set='{"cb-wage-a":2500000,"cb-wage-b":2500000}'>250만원</button>
+            <button type="button" class="chip" data-set='{"cb-wage-a":3000000,"cb-wage-b":3000000}'>300만원</button>
+            <button type="button" class="chip" data-set='{"cb-wage-a":4000000,"cb-wage-b":4000000}'>400만원</button>
+            <button type="button" class="chip" data-set='{"cb-wage-a":5000000,"cb-wage-b":5000000}'>500만원</button>
+          </div>
+
+          <div class="grid-2" style="margin-top:12px">
+            <div>
+              <label class="field-label" for="cb-months-a">본인 사용 개월</label>
+              <div class="field-row">
+                <input type="number" id="cb-months-a" min="0" max="18" step="1" value="6" inputmode="numeric" />
+                <span class="unit">개월</span>
+              </div>
+            </div>
+            <div>
+              <label class="field-label" for="cb-months-b">배우자 사용 개월</label>
+              <div class="field-row">
+                <input type="number" id="cb-months-b" min="0" max="18" step="1" value="6" inputmode="numeric" />
+                <span class="unit">개월</span>
+              </div>
+            </div>
+          </div>
+          <span class="hint">부모가 각각 3개월 이상 쓰면 육아휴직 기간이 1년에서 1년 6개월로 늘어납니다.</span>
+        </form>
+
+        <div class="card result-card">
+          <div class="result-hero" aria-live="polite">
+            <div class="label">적용 제도 아동 1인 지원 합계</div>
+            <div class="value" id="cb-total">0원</div>
+            <div class="sub" id="cb-total-ko"></div>
+            <div class="hero-foot"><span class="badge badge-ok" id="cb-badge">2026년 현행</span></div>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi">
+              <div class="k-label">첫만남이용권</div>
+              <div class="k-value" id="cb-first-meet">—</div>
+              <div class="k-sub">현행 · 출생 1회</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">부모급여 24개월</div>
+              <div class="k-value" id="cb-parent-total">—</div>
+              <div class="k-sub"><span id="cb-parent-0">—</span>(0세) · <span id="cb-parent-1">—</span>(1세)</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">아동수당 월액</div>
+              <div class="k-value" id="cb-child-monthly">—</div>
+              <div class="k-sub">지급 <span id="cb-child-months">—</span></div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">아동수당 누적</div>
+              <div class="k-value" id="cb-child-total">—</div>
+              <div class="k-sub">연령 상한 상향 반영</div>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <h3 class="result-title">2027년 7월 이후 출생아 기준(개편안)</h3>
+          <div class="kpi-grid">
+            <div class="kpi">
+              <div class="k-label">아이맞이지원금</div>
+              <div class="k-value" id="cb-grant">—</div>
+              <div class="k-sub">출생 후 1년, 분기별 현금</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">아동기본수당(월)</div>
+              <div class="k-value" id="cb-basic-monthly">—</div>
+              <div class="k-sub" id="cb-basic-sub">0~12세 156개월</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">아동기본수당 누적</div>
+              <div class="k-value" id="cb-basic-total">—</div>
+              <div class="k-sub">156개월 합계</div>
+            </div>
+            <div class="kpi">
+              <div class="k-label">현행 대비 차이</div>
+              <div class="k-value" id="cb-diff">—</div>
+              <div class="k-sub">개편안 − 현행</div>
+            </div>
+          </div>
+
+          <div class="kpi highlight" style="margin-top:12px">
+            <div class="k-label">개편안 0~12세 합계 (아이맞이지원금 + 아동기본수당)</div>
+            <div class="k-value" id="cb-reform-total">—</div>
+            <div class="k-sub">현행 제도와의 차이는 아래 표에서 확인하세요</div>
+          </div>
+
+          <div class="table-wrap" style="margin-top:12px">
+            <table class="mini-table">
+              <thead><tr><th>제도별 0~12세 합계</th><th class="num">금액</th></tr></thead>
+              <tbody id="cb-rows"></tbody>
+            </table>
+          </div>
+
+          <hr class="divider" />
+
+          <h3 class="result-title">육아휴직급여 <span class="muted small" id="cb-leave-total">—</span></h3>
+          <div class="table-wrap">
+            <table class="mini-table">
+              <thead><tr><th>사용 월</th><th class="num">본인</th><th class="num">배우자</th></tr></thead>
+              <tbody id="cb-leave-rows"></tbody>
+            </table>
+          </div>
+
+          <div class="kpi highlight" style="margin-top:14px">
+            <div class="k-label">지원금 + 육아휴직급여 합계</div>
+            <div class="k-value" id="cb-grand">—</div>
+            <div class="k-sub">2026년 상한액 기준 추정</div>
+          </div>
+
+          <div class="note" id="cb-note"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 광고: 본문 중간 (ad-slot-infeed) -->
+    <aside class="ad-slot" id="ad-slot-infeed" aria-label="광고">
+      <div class="ad-inner">
+        <div>
+          <b>광고 영역 · ad-slot-infeed</b>
+          <span>Google AdSense 반응형 광고가 들어가는 자리입니다.</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ==================== 계산 기준 요약 ==================== -->
+  <section class="wrap section" id="basis">
+    <h2>숫자는 어디서 왔나</h2>
+    <p class="section-lede">
+      계산기에 들어간 값은 감으로 정하지 않았습니다. 근로기준법·고용보험법·소득세법 조문과 고용노동부·국세청 고시,
+      보건복지부 보도자료를 근거로 삼고 화면마다 적용 값을 적어 두었습니다.
+    </p>
+
+    <div class="table-wrap">
+      <table class="basis-table">
+        <caption>2026년 기준 주요 값</caption>
+        <thead><tr><th>항목</th><th>값</th><th>근거</th></tr></thead>
+        <tbody>
+          <tr><td>퇴직금 산식</td><td>1일 평균임금 × 30일 × 재직일수 ÷ 365</td><td>근로자퇴직급여 보장법 §8</td></tr>
+          <tr><td>평균임금 제외기간</td><td>육아휴직·출산전후휴가 기간과 그 기간의 임금</td><td>근로기준법 시행령 §2①</td></tr>
+          <tr><td>구직급여 상한액</td><td>1일 68,100원 (기초일액 113,500원 × 60%)</td><td>고용보험법 §46, 시행령 §68</td></tr>
+          <tr><td>구직급여 하한액</td><td>1일 66,048원 (최저임금 10,320원 × 8h × 80%)</td><td>고용보험법 §46</td></tr>
+          <tr><td>소정급여일수</td><td>120~270일 (연령·가입기간)</td><td>고용보험법 §50 별표1</td></tr>
+          <tr><td>근로소득공제</td><td>구간별 70%~2%, 한도 2,000만원</td><td>소득세법 §47</td></tr>
+          <tr><td>기본세율</td><td>6%~45% 8단계</td><td>소득세법 §55</td></tr>
+          <tr><td>자녀세액공제</td><td>1명 25만·2명 55만·3명 이상 55만+40만/명</td><td>소득세법 §59의2</td></tr>
+          <tr><td>월세 세액공제</td><td>연 1,000만원의 15%(총급여 5,500만 이하 17%)</td><td>조세특례제한법 §95의2</td></tr>
+          <tr><td>연금계좌 세액공제</td><td>연 900만원의 12%(총급여 5,500만 이하 15%)</td><td>소득세법 §59의3</td></tr>
+          <tr><td>신용카드 소득공제</td><td>총급여 25% 초과분, 기본한도 300만(+자녀 50만)</td><td>조세특례제한법 §126의2</td></tr>
+          <tr><td>첫만남이용권</td><td>첫째 200만·둘째 이상 300만원</td><td>저출산·고령사회기본법 시행령</td></tr>
+          <tr><td>부모급여</td><td>0세 월 100만·1세 월 50만원</td><td>영유아보육법 시행령</td></tr>
+          <tr><td>아동수당</td><td>월 10만원(비수도권 10만 5,000원), 만 9세 미만</td><td>아동수당법</td></tr>
+          <tr><td>아이맞이지원금·아동기본수당</td><td>2027.7.1 이후 출생아부터(예산안)</td><td>보건복지부 2027년 예산안(2026.8.28)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fineprint">계산 결과는 공개된 자료를 바탕으로 한 참고용 추정이며 법적 효력이 없습니다. 실제 금액은 개별 사실관계와 담당 기관의 판단으로 정해집니다. 자세한 조문과 제외 항목은 <a href="about.html">계산 기준</a>에 정리했습니다.</p>
+  </section>
+
+  <!-- ==================== 해설 ==================== -->
+  <section class="wrap section" id="guide">
+    <h2>네 가지 계산, 이렇게 이어집니다</h2>
+
+    <div class="guide-grid">
+      <article class="guide-card">
+        <h3>① 퇴직금 — 육아휴직이 만드는 두 가지 효과</h3>
+        <p>
+          육아휴직 기간은 <strong>계속근로기간</strong>에 들어갑니다(남녀고용평등법 §19④). 그래서 1년 6개월을 쉬고 퇴직해도 재직일수는 줄지 않습니다.
+          반대로 <strong>평균임금 산정기간</strong>에서는 빠집니다(근로기준법 시행령 §2①5). 휴직 동안 임금이 없으니 그 달을 그대로 넣으면 1일 평균임금이
+          뚝 떨어지기 때문입니다. 계산기는 빠진 일수만큼 산정기간을 과거로 늘려 총일수를 복원하고, 그 기간에 지급된 임금은 넣지 않습니다.
+        </p>
+        <p>
+          복직 후 3개월이 안 되는 상태에서 퇴직하면 퇴직 전 3개월이 통째로 휴직기간에 걸립니다. 이때는 <em>제외기간 최초일을 평균임금 산정사유 발생일로 보아</em>
+          그 이전 3개월 임금으로 계산합니다. 계산기에서 휴직 종료일을 퇴직일과 가깝게 넣으면 이 경로로 계산됩니다.
+        </p>
+      </article>
+
+      <article class="guide-card">
+        <h3>② 실업급여 — 상한과 하한 사이가 2,052원뿐</h3>
+        <p>
+          2026년 이직자는 1일 상한 68,100원, 하한 66,048원입니다. 차이가 2,052원이라 <strong>평균임금 60%가 그대로 적용되는 구간은 기초일액 110,080~113,500원</strong>으로
+          아주 좁습니다. 월급이 그보다 낮으면 하한액, 높으면 상한액을 받습니다. “내 월급의 60%”라고 계산하면 대부분 틀리는 이유입니다.
+        </p>
+        <p>
+          2027년 1월 1일 이후 이직자는 최저임금이 10,700원으로 올라 하한액이 1일 68,480원이 됩니다. 현행 상한액 68,100원보다 커지는 역전이 생겨,
+          상한액을 하한액의 103%로 연동하는 시행령 개정안이 입법예고되어 있습니다(2026년 11월 17일 현재 공포 전).
+        </p>
+      </article>
+
+      <article class="guide-card">
+        <h3>③ 연말정산 — 환급액은 ‘기납부세액’이 정한다</h3>
+        <p>
+          연말정산 결과는 결정세액만으로 정해지지 않습니다. 1~12월에 이미 떼인 세금(기납부세액)과의 차액이 환급·추징액입니다.
+          회사에 공제신고서를 내 부양가족이 원천징수에 반영됐다면, 연말에 새로 붙는 건 연금계좌·월세·카드 같은 항목의 효과입니다.
+        </p>
+        <p>
+          계산기는 급여명세서의 1~12월 소득세 합계를 직접 넣을 수 있게 되어 있습니다. 비워 두면 간이세액표 방식으로 추정합니다.
+          의료비·교육비·기부금·보험료 세액공제는 넣지 않았으므로, 실제 환급액은 계산보다 클 수 있습니다.
+        </p>
+      </article>
+
+      <article class="guide-card">
+        <h3>④ 출산·육아 — 2027년 7월 1일이 갈림길</h3>
+        <p>
+          2027년 7월 1일 이후 출생아부터 첫만남이용권·부모급여·아동수당이 아이맞이지원금(첫째 1,000만원)과 아동기본수당(월 20만원)으로 통합됩니다.
+          6월 30일 이전 출생아는 현행 제도가 적용됩니다. 하루 차이로 12년 누적액이 1,000만원 넘게 벌어지는 문제 때문에
+          2027년 1월 출생아부터 소급 적용하는 방안이 국회에서 논의 중입니다.
+        </p>
+        <p>
+          아동수당 지급 연령도 2030년까지 매년 한 살씩 올라갑니다(2026년 만 9세 → 2027년 만 10세 → … → 2030년 만 13세).
+          계산기는 아이가 자라는 동안 적용될 상한 연령을 해마다 다르게 적용해 누적액을 구합니다.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="wrap section" id="faq">
+    <h2>자주 묻는 질문</h2>
+    <div class="faq">
+      <details open>
+        <summary>육아휴직을 쓰고 퇴직하면 퇴직금이 줄어드나요?</summary>
+        <p>재직일수는 줄지 않습니다. 육아휴직 기간은 계속근로기간에 포함되기 때문입니다. 다만 평균임금을 계산할 때 그 기간과 임금이 제외되므로, 산정기간을 그만큼 늘려 1일 평균임금을 다시 구합니다. 휴직 전후로 임금이 같다면 1일 평균임금은 거의 그대로이고, 복직 후 임금이 올랐다면 오른 임금이 반영됩니다.</p>
+      </details>
+      <details>
+        <summary>2026년 실업급여 상한액과 하한액은 얼마인가요?</summary>
+        <p>2026년 1월 1일 이후 이직자는 1일 상한 68,100원, 하한 66,048원입니다. 하한은 2026년 최저임금 10,320원 × 8시간 × 80%입니다. 상·하한 차이가 2,052원뿐이라 평균임금의 60%가 그대로 적용되는 구간은 기초일액 110,080~113,500원으로 매우 좁습니다.</p>
+      </details>
+      <details>
+        <summary>연말정산 환급액은 어떻게 계산하나요?</summary>
+        <p>총급여에서 근로소득공제·인적공제·4대보험료·신용카드 소득공제를 빼 과세표준을 만들고, 기본세율(6~45%)을 곱해 산출세액을 구한 뒤 근로소득세액공제·자녀세액공제·연금계좌·월세 세액공제를 뺍니다. 여기서 나온 결정세액이 1년 동안 원천징수된 세금보다 적으면 그 차액을 돌려받습니다.</p>
+      </details>
+      <details>
+        <summary>2027년 4월 출생아는 아이맞이지원금을 받을 수 있나요?</summary>
+        <p>2027년 예산안 기준으로는 2027년 7월 1일 이후 출생아부터 적용되므로, 4월 출생아는 현행 첫만남이용권·부모급여·아동수당을 받습니다. 2027년 1월 출생아부터 소급 적용하는 방안이 논의되고 있지만 2026년 11월 17일 현재 확정되지 않았습니다. 12월 국회 의결과 아동수당법 개정 결과를 확인해야 합니다.</p>
+      </details>
+      <details>
+        <summary>계산 결과가 실제 지급액과 다른 이유는 무엇인가요?</summary>
+        <p>법령과 고시에 정해진 금액만 반영하고, 회사 규정·지자체 조례·개인별 공제 항목처럼 사람마다 달라지는 값은 넣지 않았기 때문입니다. 지급 여부와 금액은 담당 기관(고용센터·국세청·주민센터)의 심사로 확정됩니다.</p>
+      </details>
+      <details>
+        <summary>입력한 값이 저장되거나 전송되나요?</summary>
+        <p>아니요. 모든 계산은 브라우저 안에서 실행되고, 입력값은 서버로 보내지 않습니다. 새로 고침하면 입력값은 사라집니다.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 광고: 하단 (ad-slot-bottom) -->
+  <div class="wrap section">
+    <aside class="ad-slot" id="ad-slot-bottom" aria-label="광고">
+      <div class="ad-inner">
+        <div>
+          <b>광고 영역 · ad-slot-bottom</b>
+          <span>Google AdSense 반응형 광고가 들어가는 자리입니다.</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ==================== 준비물 (쿠팡 파트너스) ==================== -->
+  <div class="wrap section" id="picks">
+    <section class="picks" aria-labelledby="picks-title">
+      <div class="picks-head">
+        <h2 id="picks-title">출산·육아 지원금 계산했으면, 준비물도 같이</h2>
+        <p>2027년 4월 출산을 앞두고 직접 사 보거나, 사기 전에 비교해 고른 것들입니다. 가격과 재고는 링크에서 확인해 주세요.</p>
+      </div>
+
+      <div class="picks-grid">
+        <a class="pick" href="https://link.coupang.com/a/iGyq9ZPMYe" target="_blank" rel="sponsored nofollow noopener">
+          <span class="pick-tag">출산·수유</span>
+          <span class="pick-name">베이비 브레짜 분유제조기 맘마존</span>
+          <span class="pick-why">밤중 수유에서 물 온도 맞추고 분량 재는 시간을 줄여 줍니다.</span>
+          <span class="pick-go">쿠팡에서 보기 <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="pick" href="https://link.coupang.com/a/iGyt4Pq2MK" target="_blank" rel="sponsored nofollow noopener">
+          <span class="pick-tag">출산·수유</span>
+          <span class="pick-name">베이비 브레짜 올인원 젖병세척기 프로</span>
+          <span class="pick-why">세척·스팀소독·건조를 한 번에 돌려 젖병 쌓이는 부담을 덜어 줍니다.</span>
+          <span class="pick-go">쿠팡에서 보기 <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="pick" href="https://link.coupang.com/a/iGyw0KziIS" target="_blank" rel="sponsored nofollow noopener">
+          <span class="pick-tag">임산부</span>
+          <span class="pick-name">해피테일즈 H자형 바디필로우 60수 순면</span>
+          <span class="pick-why">배가 불러온 뒤 옆으로 누울 때 허리와 배를 함께 받쳐 줍니다.</span>
+          <span class="pick-go">쿠팡에서 보기 <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="pick" href="https://link.coupang.com/a/iGyzLHo6W4" target="_blank" rel="sponsored nofollow noopener">
+          <span class="pick-tag">신생아</span>
+          <span class="pick-name">신생아 물티슈 엠보싱 무향</span>
+          <span class="pick-why">향·알코올 없는 도톰한 엠보싱이라 한 장으로 마무리됩니다.</span>
+          <span class="pick-go">쿠팡에서 보기 <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="pick" href="https://link.coupang.com/a/iGyDVHdWTc" target="_blank" rel="sponsored nofollow noopener">
+          <span class="pick-tag">신생아</span>
+          <span class="pick-name">신생아 기저귀 밴드형</span>
+          <span class="pick-why">태어나서 한 달은 배꼽 자국 없는 밴드형이 편합니다.</span>
+          <span class="pick-go">쿠팡에서 보기 <span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="pick" href="https://link.coupang.com/a/iGyKFGHnps" target="_blank" rel="sponsored nofollow noopener">
+          <span class="pick-tag">살림</span>
+          <span class="pick-name">도브 핸드워시</span>
+          <span class="pick-why">기저귀 갈고 분유 타는 날, 손 씻는 횟수가 확 늘어납니다.</span>
+          <span class="pick-go">쿠팡에서 보기 <span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+
+      <p class="picks-disclosure">[광고] 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+    </section>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:8px">
+          <span class="brand-mark" aria-hidden="true">혜</span>
+          <span>한국 혜택 계산소</span>
+        </div>
+        <p class="footer-note">퇴직·실업·세금·출산육아에서 받을 수 있는 돈을 한곳에 모았습니다. 모든 계산은 브라우저에서 실행되고 입력값은 저장되지 않습니다.</p>
+      </div>
+      <div>
+        <div class="footer-head">계산기</div>
+        <div class="footer-links">
+          <a href="#calculators" data-tab="severance">퇴직금(육아휴직 반영)</a>
+          <a href="#calculators" data-tab="unemployment">실업급여</a>
+          <a href="#calculators" data-tab="yearend">연말정산</a>
+          <a href="#calculators" data-tab="childbirth">출산·육아 지원금</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-head">안내</div>
+        <div class="footer-links">
+          <a href="about.html">계산 기준·법령 근거</a>
+          <a href="privacy.html">개인정보처리방침</a>
+          <a href="#guide">해설</a>
+          <a href="#faq">자주 묻는 질문</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-head">다른 계산기</div>
+        <div class="footer-links">
+          <a href="https://sdn6517-cmd.github.io/life-hr-calc/" target="_blank" rel="noopener">생활 계산소 — 출산·육아 지원금·퇴직금·실업급여</a>
+          <a href="https://sdn6517-cmd.github.io/budongsan-calc/" target="_blank" rel="noopener">부동산 계산소 — 청약가점·DSR·취득세</a>
+          <a href="https://sdn6517-cmd.github.io/global-nomad-calc/" target="_blank" rel="noopener">Nomad Number Lab — AI 비용·프리랜서 단가</a>
+          <a href="https://sdn6517-cmd.github.io/" target="_blank" rel="noopener">전체 계산기 모음(허브)</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 한국 혜택 계산소. 계산 결과는 참고용이며 법적 효력이 없습니다.</span>
+      <span>기준일 2026. 11. 17.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

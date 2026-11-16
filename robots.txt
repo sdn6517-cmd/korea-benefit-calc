@@ -1,0 +1,12 @@
+# 한국 혜택 계산소 — robots.txt
+User-agent: *
+Allow: /
+
+# Google AdSense 크롤러 (광고 게재를 위해 허용)
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+Sitemap: https://sdn6517-cmd.github.io/korea-benefit-calc/sitemap.xml
