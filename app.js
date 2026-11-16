@@ -941,9 +941,7 @@
     setText('sv-window-days', r.window ? comma(r.window.days) + '일' : '—');
     setText('sv-excluded', r.window ? comma(r.window.excluded) + '일' : '—');
     setText('sv-included', r.window ? comma(r.window.included) + '일' : '—');
-    setText('sv-wage-sum', won(r.avgSum));
     setText('sv-day-avg', won(r.dayAvg));
-    setText('sv-day-ordinary', won(r.dailyOrdinary));
     setText('sv-applied', won(r.applied));
     setText('sv-basis', r.basis);
     setText('sv-leave-days', comma(r.leaveDays) + '일');
@@ -1006,15 +1004,10 @@
     setText('ui-days', comma(r.days) + '일');
     setText('ui-total', won(r.total));
     setText('ui-total-ko', manWon(r.total) + ' · ' + r.year + '년 이직 기준');
-    setText('ui-monthly', won(r.monthly));
+    setText('ui-monthly-out', won(r.monthly));
     setText('ui-monthly6', won(r.monthly6));
     setText('ui-base', won(r.baseDaily));
     setText('ui-base-raw', won(r.baseDailyRaw));
-    setText('ui-raw60', won(r.raw60));
-    setText('ui-floor', won(r.floorPay));
-    setText('ui-cap', won(r.capPay));
-    setText('ui-floor-base', won(r.floorBase));
-    setText('ui-basecap', won(r.baseCap));
     setText('ui-age', r.age + '세');
     setText('ui-ins', r.insMonths + '개월');
     setText('ui-3m-days', r.days3m + '일');
@@ -1078,18 +1071,8 @@
     setText('ye-total-tax', won(r.totalTax));
     setText('ye-withheld', won(r.withheld));
     setText('ye-taxbase', won(r.taxBase));
-    setText('ye-earned-ded', won(r.earnedDed));
-    setText('ye-personal', won(r.personalDed));
-    setText('ye-insurance-out', won(r.insurance));
-    setText('ye-card-out', won(r.cardDeduction));
     setText('ye-calculated', won(r.calculated));
     setText('ye-credits', won(r.credits));
-    setText('ye-credit-earned', won(r.creditEarned));
-    setText('ye-credit-child', won(r.childCredit));
-    setText('ye-credit-birth', won(r.birthCredit));
-    setText('ye-credit-pension', won(r.pensionCredit));
-    setText('ye-credit-rent', won(r.rentCredit));
-    setText('ye-credit-standard', won(r.standardCredit));
     setText('ye-marginal', Math.round(r.marginalRate * 100) + '%');
     setBadge('ye-badge', '2026년 귀속 · 2027년 2월 정산', 'badge-ok');
     setBadge('ye-withheld-badge', r.withheldGiven ? '직접 입력' : '간이세액표 추정', r.withheldGiven ? 'badge-neutral' : 'badge-ok');
@@ -1156,8 +1139,6 @@
     setText('cb-reform-total', won(r.cashReform));
     setText('cb-diff', (r.reformDiff >= 0 ? '+' : '−') + manWon(Math.abs(r.reformDiff)));
     setText('cb-leave-total', won(r.leaveTotal));
-    setText('cb-leave-a', won(r.leaveA));
-    setText('cb-leave-b', won(r.leaveB));
     setText('cb-grand', won(r.applied + r.leaveTotal));
     setBadge('cb-badge', reform ? '2027.7.1 이후 출생 기준(개편안)' : '2026년 현행 기준', reform ? 'badge-neutral' : 'badge-ok');
 
